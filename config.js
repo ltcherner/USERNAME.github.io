@@ -40,24 +40,25 @@ window.SITE_CONFIG = {
   },
 
   footer: {
-	  footerBg: "#111111",
-	  footerText: "#ffffff",
-	  footerBorder: "#222222",
-	
-	  homeLinkText: "RoadwayVR",
-	
-	  templateCredit:
-	    "This academic showcase template was developed by RoadwayVR.",
-	
-	  templateCreditLinkText:
-	    "Learn more at RoadwayVR.com",
-	
-	  templateCreditUrl:
-	    "https://roadwayvr.com"
+    footerBg: "#111111",
+    footerText: "#ffffff",
+    footerBorder: "#222222",
+
+    homeLinkText: "RoadwayVR",
+
+    templateCredit:
+      "This academic showcase template was developed by RoadwayVR.",
+
+    templateCreditLinkText:
+      "Learn more at RoadwayVR.com",
+
+    templateCreditUrl:
+      "https://roadwayvr.com"
   },
 
   intro: {
     projectTitleLabel: "Development of a Digital Model of Kipling Avenue and Eglinton Avenue West, Toronto, Using SUMO Traffic Simulation",
+    projectTitle: "Development of a Digital Model of Kipling Avenue and Eglinton Avenue West, Toronto, Using SUMO Traffic Simulation",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
@@ -84,7 +85,7 @@ window.SITE_CONFIG = {
       "Simulation results are hard to communicate."
     ],
 
-   objectivesTitle: "Project Objectives",
+    objectivesTitle: "Project Objectives",
     objectivesBullets: [
       "Build a SUMO road network and 100% HDV baseline.",
       "Compare AV and HDV speed-density results on Eglinton Avenue West.",
@@ -93,7 +94,7 @@ window.SITE_CONFIG = {
     ]
   },
 
-    overview: {
+  overview: {
     title: "Methodology",
     steps: [
       {
@@ -118,8 +119,8 @@ window.SITE_CONFIG = {
       }
     ]
   },
-  
-	implementation: {
+
+  implementation: {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
@@ -160,8 +161,8 @@ window.SITE_CONFIG = {
       }
     ]
   },
-	
-	    results: {
+
+  results: {
     title: "Results & Potential Improvements",
     subtitle:
       "Speed-density results on eastbound Eglinton Avenue West (E160) for the base scenario (100% HDV) and Scenario 1 (100% AV). Results are for educational purposes only.",
@@ -189,32 +190,22 @@ window.SITE_CONFIG = {
     ]
   },
 
-    discussionTitle: "Discussion",
-    discussionBullets: [
-      "The base scenario (100% HDV) shows congested flow on E160, with speeds of 13-20 km/h.",
-      "Speed falls steadily as density rises, with a strong linear fit (r = -0.96).",
-      "Scenario 1 (100% AV) overlaps the baseline almost completely, averaging 17.1 km/h over five seeds.",
-      "The 90 s signal, not vehicle following, controls speed because E160 runs at only 36% of capacity.",
-      "AVs cut network time loss by about 5%, and larger gains are expected as demand nears capacity."
-    ]
-		},
-
   team: {
     title: "Team & Acknowledgments",
     subtitle:
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
-         members: [
+    members: [
       { name: "Larry Tcherner", role: "SUMO Road Network Development + Results Analysis and Visualization" },
       { name: "Mahir Nasar", role: "Traffic Demand and Signal Configuration + HDV/CAV Scenario Development" },
       { name: "Aaron Upadhyay", role: "Intervention Design and Implementation + Report Writing and Referencing" }
     ],
 
     acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
+      "Course: SMRTTECH 4SC3 Smart Cities and Communities",
+      "Institution: McMaster University",
       "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
+      "Tools: SUMO (Netedit, sumo-gui, netconvert)"
     ],
 
     repoLabel: "Project Repository",
