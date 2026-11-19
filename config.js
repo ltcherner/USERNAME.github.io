@@ -12,10 +12,10 @@ window.SITE_CONFIG = {
     // updated tagline text (big pill)
     tagline: "Course Project: Smart Cities and Communities",
 
-    studentName: "Yohan Mohammadi",
-    program: "Program / Department",
+    studentName: "Larry Tcherner",
+    program: "Automation Systems Technology | BTech",
     university: "McMaster University, Canada",
-    email: "your.email@example.com"
+    email: "tchernl@mcmaster.ca"
   },
 
   disclaimer: {
@@ -57,7 +57,7 @@ window.SITE_CONFIG = {
   },
 
   intro: {
-    projectTitleLabel: "Project Title",
+    projectTitleLabel: "Development of Digital Twin of a Railway Cooridor Using Unity Game Enginer and SUMo ETraffic Simulation",
     projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
@@ -71,26 +71,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+			"Most urban traffic delays and conflicts occur at signalized intersections.",
+            "Kipling Avenue and Eglinton Avenue West is a major intersection in Etobicoke, Toronto.",
+            "Testing road changes in the real world is costly and disruptive.",
+            "SUMO lets engineers test changes on a digital model before building them."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+		"A digital baseline of the intersection is needed.",
+            "The effect of AVs on Eglinton Avenue West is unknown.",
+            "The proposed right-turn lane has not been tested.",
+            "Simulation results are hard to communicate."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+			"Build a SUMO road network and 100% HDV baseline.",
+            "Compare AV and HDV speed-density results on Eglinton Avenue West.",
+            "Test a dedicated right-turn lane on eastbound Eglinton Avenue West.",
+            "Present results in different styles through KPIs, figures, and a showcase website."
     ]
   },
 
@@ -98,96 +98,96 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
-        image: "assets/img/image2.jpg"
+          title: "Step 1: Traffic Simulation (SUMO)",
+          text: "Model the intersection and compare HDV, AV, and right-turn lane scenarios.",
+          image: "assets/img/image2.jpg"
       },
       {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
-        image: "assets/img/image3.jpg"
+		  title: "Step 2: Digital Asset Development (Meshy AI + Blender)",
+          text: "Generate 13 assets with AI and correct their scale in Blender.",
+          image: "assets/img/image3.jpg"
       },
       {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
-        image: "assets/img/image4.jpg"
+		  title: "Step 3: Railway Scene and 360-Degree Video (Unity)",
+          text: "Assemble the station, animate the train, and record a 360-degree video.",
+          image: "assets/img/image4.jpg"
       },
       {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
-        image: "assets/img/image5.jpg"
+		  title: "Step 4: Results & Communication (Figures + Showcase Website)",
+          text: "Summarize results using figures, KPIs, and the showcase website.",
+          image: "assets/img/image5.jpg"
       }
     ]
   },
-
-  implementation: {
-    title: "Methodology Steps (Demo Modules)",
+  
+	implementation: {
+     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Traffic Simulation (SUMO)",
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+          { text: "Build a 309-edge road network of the intersection in Netedit." },
+          { text: "Run a 100% HDV baseline with 600 veh/h per approach and a 90 s signal." },
+          { text: "Test a 100% AV fleet and a new right-turn lane on Eglinton Avenue West." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 2: Digital Asset Development (Meshy AI + Blender)",
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          { text: "Generative AI: use Meshy AI to create 13 station and train assets." },
+          { text: "From generative AI to Blender: scale each asset against a 1.77 m human model." },
+          { text: "Preprocessing in Blender: set origins, apply transforms, and export FBX files." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 3: Railway Scene and 360-Degree Video (Unity)",
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+          { text: "Place 33 asset instances around the Oshawa GO platform and track." },
+          { text: "Move the locomotive and coupled coach along a 220 m path with MeshPathMover." },
+          { text: "Record a 35 s, 4096 x 2048 360-degree video and publish it on YouTube." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
         title: "Module 4: Results & Communication",
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          { text: "KPI set: speed-density plots, queue length, time loss, and triangle counts." },
+          { text: "Scenario story: AVs matched HDV speeds, while the turn lane cut lane density by 28%." },
+          { text: "Limitations + next steps: calibrate SUMO with real data and fix asset scale in Unity." }
         ],
         image: "assets/img/image5.jpg"
       }
     ]
   },
 
-	results: {
-			title: "Results & Potential Improvements",
-			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+	  results: {
+    title: "Results & Potential Improvements",
+    subtitle:
+      "Speed-density results on eastbound Eglinton Avenue West (E160) for the base scenario (100% HDV) and Scenario 1 (100% AV). Results are for educational purposes only.",
 
-			charts: {
-				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
-				},
-				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
-				}
-			},
+    charts: {
+      left: {
+        title: "Base Scenario - 100% HDV: Speed-Density on E160",
+        src: "assets/img/image6.jpg",
+        alt: "Base scenario speed-density diagram for eastbound Eglinton Avenue West (E160)"
+      },
+      right: {
+        title: "Scenario 1 - 100% AV: Speed-Density on E160",
+        src: "assets/img/image7.jpg",
+        alt: "Scenario 1 speed-density diagram for eastbound Eglinton Avenue West (E160)"
+      }
+    },
 
-			discussionTitle: "Discussion",
-			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
-			]
+    discussionTitle: "Discussion",
+    discussionBullets: [
+      "The base scenario (100% HDV) shows congested flow on E160, with speeds of 13-20 km/h.",
+      "Speed falls steadily as density rises, with a strong linear fit (r = -0.96).",
+      "Scenario 1 (100% AV) overlaps the baseline almost completely, averaging 17.1 km/h over five seeds.",
+      "The 90 s signal, not vehicle following, controls speed because E160 runs at only 36% of capacity.",
+      "AVs cut network time loss by about 5%, and larger gains are expected as demand nears capacity."
+    ]
 		},
 
   team: {
@@ -195,8 +195,10 @@ window.SITE_CONFIG = {
     subtitle:
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
-    members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+       members: [
+      { name: "Larry Tcherner", role: "SUMO Road Network Development + Results Analysis and Visualization + 3D Asset Generation and Blender Modelling + Asset Preparation, Materials and FBX Export" },
+      { name: "Mahir Abdul Nasar", role: "HDV/CAV Scenario Development + Unity Environment Assembly + Train Animation and Movement + 360-Degree Video Production and Verification" },
+      { name: "Aaron Upadhyay", role: "Traffic Demand and Signal Configuration + Intervention Design and Implementation + Rendering Optimization and Performance Evaluation + Report Writing and Referencing" }
     ],
 
     acknowledgments: [
