@@ -57,7 +57,7 @@ window.SITE_CONFIG = {
   },
 
   intro: {
-    projectTitleLabel: "Development of a Digital Model of Kipling Avenue and Eglinton Avenue West, Toronto, Using SUMO Traffic Simulation",
+    projectTitleLabel: "SMRTTECH 4SC3 | Mini Project A",
     projectTitle: "Development of a Digital Model of Kipling Avenue and Eglinton Avenue West, Toronto, Using SUMO Traffic Simulation",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
